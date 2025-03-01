@@ -1,0 +1,88 @@
+/* עיצוב כללי עבור קונטיינר ההרשמה */
+.register-container {
+  width: 350px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* עיצוב הטופס עצמו */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* עיצוב לכל קבוצת שדה */
+.form-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* עיצוב לתוויות שדות */
+.register-label {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+/* עיצוב לתווית "בחר תפקיד" עם פונט קטן יותר */
+.register-label-small {
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+/* עיצוב לשדות הקלט ושדה הבחירה */
+.register-input,
+.register-select {
+  flex: 2;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+/* עיצוב לשדות בעת קבלת פוקוס */
+.register-input:focus,
+.register-select:focus {
+  border-color: #6c5ce7;
+  outline: none;
+}
+
+/* עיצוב כפתור ההרשמה */
+.register-button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.register-button:hover {
+  background-color: #0056b3;
+}
+
+/* הודעת שגיאה */
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* הודעת הצלחה */
+.success-message {
+  color: #0056b3;
+  margin-top: 10px;
+  font-size: 14px;
+}

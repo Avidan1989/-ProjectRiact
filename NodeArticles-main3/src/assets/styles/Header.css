@@ -1,0 +1,80 @@
+/* עיצוב ה־Header הכללי */
+header {
+    background-color: #fafafa; /* רקע בהיר עדין */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* הצללה עדינה */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0; /* קו עדין להפרדה */
+  }
+  
+  /* הגבלת רוחב הקונטיינר והוספת ריווח צדדי */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px; /* ריווח קטן משני הצדדים */
+  }
+  
+  /* עטיפת האלמנטים ב־Header עם רווח בין הפריטים */
+  .header__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* עיצוב הלוגו והסלוגן */
+/* עיצוב הלוגו והסלוגן - עדכון */
+.logo {
+    display: flex;
+    align-items: center;
+    min-width: 200px; /* קובע רוחב מינימלי ל-logo */
+    gap: 15px;      /* רווח נוח בין התמונה לסלוגן */
+    padding: 0 10px; /* ריווח פנימי אופציונלי */
+  }
+  
+  .logo img {
+    width: 80px;    /* הגדלת גודל התמונה */
+    height: auto;
+  }
+  
+  
+  .logo .slogan {
+    font-size:29px;
+    color: #373131;
+    line-height: 1.2;
+  }
+  
+  /* עיצוב התפריט */
+  nav .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu-item {
+    text-decoration: none;
+    color: #5a4a7a; /* גוון סגול עדין */
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .menu-item:hover,
+  .menu-item.active {
+    color: #453463; /* גוון סגול כהה יותר בעת ריחוף */
+  }
+  
+  /* התאמה רספונסיבית למסכים קטנים */
+  @media (max-width: 600px) {
+    .header__wrap {
+      flex-direction: column;
+      text-align: center;
+      gap: 15px;
+    }
+    nav .menu {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  

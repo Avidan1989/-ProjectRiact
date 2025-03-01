@@ -1,0 +1,108 @@
+/* Container for the page */
+* {
+  border: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  text-align: center;
+  margin: 20px;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: #333;
+}
+
+/* Heading style */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #6a1b9a;
+}
+
+/* File input styles */
+input[type="file"] {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #e8eaf6;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input[type="file"]:hover {
+  background-color: #c5cae9;
+}
+
+/* Admin controls container: arrange buttons in a single row */
+.admin-controls {
+  display: flex;
+  flex-wrap: nowrap; /* מונע גלישה לשורה חדשה */
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* רווח בין הכפתורים */
+}
+
+/* Button styles */
+button {
+  padding: 4px 8px; /* הקטנת הפדינג */
+  background-color: #1e88e5;
+  border: none;
+  color: white;
+  font-size: 0.8rem; /* גודל טקסט קטן יותר */
+  border-radius: 15px; /* עיגול פחות בולט */
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  min-width: auto; /* מבטיח שאין מינימום רוחב מיותר */
+}
+
+button:hover {
+  background-color: #1565c0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styles */
+table {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #6a1b9a;
+  color: white;
+}
+
+td {
+  background-color: #f1f8e9;
+}
+
+td:not(:first-child):hover {
+  background-color: #e1bee7;
+}
+
+/* Empty data message */
+td[colspan="4"] {
+  text-align: center;
+  font-style: italic;
+  color: #444;
+}
